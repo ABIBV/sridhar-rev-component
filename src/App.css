@@ -1,38 +1,118 @@
-.App {
+.page-title {
   text-align: center;
+  margin: 2rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-title h1 {
+  margin: 0 0 0.5rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-title p {
+  font-size: 20px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rev-parent {
+  width: 80%;
+  margin: 4rem auto 2rem auto;
+}
+
+.rev-parent .rev-forecast-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.rev-forecast-container .rev-container {
+  width: 75%;
+}
+
+.rev-forecast-container .rev-meta {
+  width: 25%;
+}
+
+.rev-container .rev-radio-container {
+  /* display: inline-block; */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rev-container .rev-radio-container input {
+  display: none;
+}
+
+.rev-container .rev-radio-container label {
+  padding: 0.25rem 1.5rem;
+  display: inline-block;
+  border: 2px solid #448aff;
+}
+
+.rev-container .rev-radio-container input:checked + label {
+  background-color: #448aff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.rev-container .rev-data-container {
+  display: flex;
+  box-shadow: 0 0 11px #efefef;
+  margin: 1rem 0;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rev-container .rev-data-container .rev-data-form {
+  width: 25%;
+  background-color: rgb(243, 243, 243);
+  padding: 2rem;
+}
+
+.rev-data-form .form-title h5 {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+
+.rev-data-form .form-input {
+  margin: 1.5rem 0;
+}
+
+.rev-data-form .form-inputs label {
+  font-size: 12px;
+  display: block;
+  font-weight: bold;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.rev-data-form .form-inputs input {
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 6px;
+  width: 90%;
+  -moz-appearance: textfield;
+}
+
+.rev-data-form .form-inputs input#revenueChurn {
+  width: 20%;
+  font-weight: 800;
+  color: #1976d2;
+}
+
+.rev-data-form .form-inputs input:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+
+.rev-data-form .form-inputs input::-webkit-outer-spin-button,
+.rev-data-form .form-inputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rev-meta .rev-card {
+  width: 80%;
+  margin-left: auto;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 0 11px #efefef;
 }
